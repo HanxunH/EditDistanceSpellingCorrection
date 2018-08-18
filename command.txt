@@ -1,0 +1,25 @@
+
+
+
+Sample Data Sets
+
+Threshold -t 1
+
+Levenshtein
+python coconutOrca.py -l -f 2018S2-90049P1-data/sample_test_misspell.txt 2018S2-90049P1-data/sample_test_correct.txt -t 1
+
+GlobalEditDistence
+python coconutOrca.py -ged -f 2018S2-90049P1-data/sample_test_misspell.txt 2018S2-90049P1-data/sample_test_correct.txt -t 1
+
+LocalEditDistence
+python coconutOrca.py -led -f 2018S2-90049P1-data/sample_test_misspell.txt 2018S2-90049P1-data/sample_test_correct.txt -t 1
+
+nGram n=2
+python coconutOrca.py -ngram -n 2 -f 2018S2-90049P1-data/sample_test_misspell.txt 2018S2-90049P1-data/sample_test_correct.txt -t 1
+
+
+Wiki Data Set
+Threshold -t 1
+
+Levenshtein
+python coconutOrca.py -l -f 2018S2-90049P1-data/wiki_misspell.txt 2018S2-90049P1-data/wiki_correct.txt -t 1

@@ -10,7 +10,7 @@ class utilHelper:
     def getLogger(self):
         return self.logger
 
-    def getUpDictionaryList(self, filePath):
+    def getFileDictionaryList(self, filePath):
         dictionaryList = []
         try:
             with open(filePath) as fp:
@@ -24,3 +24,12 @@ class utilHelper:
             self.logger.error(str(e))
 
         return dictionaryList
+
+    def writeDictionaryListToFile(self, list, filePath):
+        try:
+            with open(filePath,"w+") as fp:
+                for item in list:
+                    fp.write(item+"\n")
+        except Exception, e:
+            self.logger.error(str(e))
+        return
