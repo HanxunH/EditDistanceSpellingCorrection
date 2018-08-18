@@ -1,4 +1,5 @@
 import utilHelper as helper
+import Levenshtein
 
 class autoCorrectMethods:
     def __init__(self):
@@ -136,3 +137,8 @@ class autoCorrectMethods:
             print score
 
         return score
+
+    def levenshtein(self,originalWord,targetWord):
+
+        print Levenshtein.distance(originalWord,targetWord)
+        return
