@@ -10,7 +10,17 @@ class utilHelper:
     def getLogger(self):
         return self.logger
 
-    def setUpDictionary(self, file):
-        with open("file.txt", "r") as file:
-            for line in file:
-                print line
+    def getUpDictionaryList(self, filePath):
+        dictionaryList = []
+        try:
+            with open(filePath) as fp:
+                line = fp.readline()
+                while line:
+                    line = line.strip('\n')
+                    dictionaryList.append(line)
+                    line = fp.readline()
+
+        except Exception, e:
+            self.logger.error(str(e))
+
+        return dictionaryList

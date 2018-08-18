@@ -139,6 +139,4 @@ class autoCorrectMethods:
         return score
 
     def levenshtein(self,originalWord,targetWord):
-
-        print Levenshtein.distance(originalWord,targetWord)
-        return
+        return Levenshtein.distance(originalWord,targetWord)
