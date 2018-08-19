@@ -4,6 +4,8 @@ import time
 import orcaCorrect
 import sys
 import os
+import multiprocessing
+import numpy
 
 class coconutOrca:
     def __init__(self):
@@ -12,6 +14,8 @@ class coconutOrca:
         self.utilHelper = helper.utilHelper()
         self.logger = self.utilHelper.getLogger()
         self.correctHandler = orcaCorrect.orcaAutoCorrect()
+        self.isMultipleProcessing = False
+        self.coreCount = 1
         return
 
     def correctFileAndCompare(self, dictionary, misspelledFile, correctFile, method , n=2, threshold=1):
@@ -28,29 +32,42 @@ class coconutOrca:
         orcaCorrectList = []
         orcaCorrectListWriteToFile = []
 
-        statisticReport = coconutReport.report(method,threshold,n,self.fileOrcaCorrectFilePath + "/" + method.__name__ + "_" + "report" + "_"+misspelledFileName)
+        statisticReport = coconutReport.report(method,threshold,n,self.fileOrcaCorrectFilePath + "/" + method.__name__ + "_" + "t=" + str(threshold) + "_" + "report" + "_" + misspelledFileName)
         statisticReport.addCorrectFileName(correctFileFileName)
         statisticReport.addMisspelledFileName(misspelledFileName)
-        for item in misspelledFileDictionaryList:
-            self.logger.info("==================")
-            self.logger.info("Comparing: " + item)
-            orcaPredictList = self.correctHandler.correctWord(dictionary,item,method,n,threshold)
-            self.logger.info("Prediction: " + str(orcaPredictList))
-            list = []
-            for item in orcaPredictList:
-                list.append(item)
-            orcaCorrectList.append(list)
-        for item in orcaCorrectList:
-            orcaCorrectListWriteToFile.append(str(item))
-        statisticReport.calculateStatisticReport(orcaCorrectList,correctFileDictionaryList)
 
-        self.utilHelper.writeDictionaryListToFile(orcaCorrectListWriteToFile, self.fileOrcaCorrectFilePath + "/" + method.__name__ + "_"+misspelledFileName)
+        misspelledFileDictionarySplitList = 0
+        if self.isMultipleProcessing:
+            def chunks(l, n):
+                n = max(1, n)
+                return (l[i:i+n] for i in xrange(0, len(l), n))
+
+            misspelledFileDictionarySplitList = chunks(misspelledFileDictionaryList,self.coreCount)
+            print misspelledFileDictionarySplitList
+        else:
+            for item in misspelledFileDictionaryList:
+                self.logger.info("====================================")
+                self.logger.info("Comparing: " + item)
+                orcaPredictList = self.correctHandler.correctWord(dictionary,item,method,n,threshold)
+                self.logger.info("Prediction: " + str(orcaPredictList))
+                list = []
+                for item in orcaPredictList:
+                    list.append(item)
+                orcaCorrectList.append(list)
+            for item in orcaCorrectList:
+                orcaCorrectListWriteToFile.append(str(item))
+
+            statisticReport.calculateStatisticReport(orcaCorrectList,correctFileDictionaryList)
+            self.utilHelper.writeDictionaryListToFile(orcaCorrectListWriteToFile, self.fileOrcaCorrectFilePath + "/" + method.__name__ + "_" + "t=" + str(threshold) + "_" +misspelledFileName)
+
         return
 
     def main(self):
         dictionaryList = self.utilHelper.getFileDictionaryList(self.dictionaryFile)
         perdictThreshold = 1
         nGram = 2
+        isMultipleProcessing = False
+        coreCount = 0
         # Command Handling
         if "-t" in sys.argv:
             index = sys.argv.index("-t")
@@ -73,6 +90,10 @@ class coconutOrca:
             misspledFile = sys.argv[index+1]
             correctFile = sys.argv[index+2]
 
+        if "-m" in sys.argv:
+            index = sys.argv.index("-m")
+            self.isMultipleProcessing = True
+            self.coreCount = int(sys.argv[index+1])
 
         # Test Cases
         if "-l" in sys.argv:

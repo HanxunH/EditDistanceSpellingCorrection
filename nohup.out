@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "coconutOrca.py", line 116, in <module>
+    runable.main()
+  File "coconutOrca.py", line 101, in main
+    self.correctFileAndCompare(dictionaryList,misspledFile,correctFile,self.correctHandler.correctMethods.levenshtein,nGram,perdictThreshold)
+  File "coconutOrca.py", line 51, in correctFileAndCompare
+    orcaPredictList = self.correctHandler.correctWord(dictionary,item,method,n,threshold)
+  File "/Users/hanxunhuang/Desktop/UniMelb/COMP90049KT/project1/orcaCorrect.py", line 20, in correctWord
+    possibleList.push((item,score))
+  File "/Users/hanxunhuang/Desktop/UniMelb/COMP90049KT/project1/util.py", line 223, in push
+    PriorityQueue.push(self, item, self.priorityFunction(item))
+  File "/Users/hanxunhuang/Desktop/UniMelb/COMP90049KT/project1/util.py", line 184, in push
+    heapq.heappush(self.heap, entry)
+KeyboardInterrupt

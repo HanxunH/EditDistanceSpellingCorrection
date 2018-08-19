@@ -1,10 +1,13 @@
 import logging
-
+import datetime
 
 class utilHelper:
     def __init__(self):
         # Set up logger
-        logging.basicConfig(format='%(asctime)s - %(levelname)s - [%(filename)s:%(lineno)s - %(funcName)s() ] - %(message)s',level=logging.DEBUG)
+        x = datetime.datetime.now()
+        fileName = "logs/"+str(x.year)+"-"+str(x.month)+"-"+str(x.day)+".log"
+        logging.basicConfig(filename=fileName, format='%(asctime)s - %(levelname)s - [%(filename)s:%(lineno)s - %(funcName)s() ] - %(message)s',level=logging.DEBUG)
+        #logging.basicConfig(format='%(asctime)s - %(levelname)s - [%(filename)s:%(lineno)s - %(funcName)s() ] - %(message)s',level=logging.DEBUG)
         self.logger = logging.getLogger()
 
     def getLogger(self):

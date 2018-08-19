@@ -1,0 +1,12 @@
+=====================================
+MisspelledFileName: sample_test_misspell.txt
+CorrectFileName: sample_test_correct.txt
+Method Name: levenshtein
+Threshold: 5
+TotalWords: 30
+TotalCorrectWords: 29
+TotalPredictWords: 150
+Accuracy(Recall): 0.966666666667
+Precision: 0.193333333333
+TimeUsed: 0:00:27.076922
+=====================================

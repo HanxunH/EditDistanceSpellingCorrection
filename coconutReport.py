@@ -1,6 +1,7 @@
 from __future__ import division
 import utilHelper as helper
 import datetime
+import socket
 
 class report:
     def __init__(self, method, threshold, ngram,filePath):
@@ -43,7 +44,7 @@ class report:
     def generateReport(self):
         self.reportItemlist = []
         self.reportItemlist.append("=====================================")
-        self.reportItemlist.append("MisspelledFileName: " + self.misspelledFileName)
+        self.reportItemlist.append("HostName: " + socket.gethostname())
         self.reportItemlist.append("CorrectFileName: " + self.correctFileName)
         self.reportItemlist.append("Method Name: " + self.methodName)
         if self.methodName == "nGram":
