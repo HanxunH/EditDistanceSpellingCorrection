@@ -32,3 +32,9 @@ python coconutOrca.py -led -f 2018S2-90049P1-data/wiki_misspell.txt 2018S2-90049
 
 nGram n=2
 python coconutOrca.py -ngram -n 2 -f 2018S2-90049P1-data/wiki_misspell.txt 2018S2-90049P1-data/wiki_correct.txt -t 1
+
+Birkbeck Data Set
+Threshold -t 1
+
+Levenshtein
+nohup python coconutOrca.py -l -f 2018S2-90049P1-data/birkbeck_misspell.txt 2018S2-90049P1-data/birkbeck.txt -t 1 &

@@ -1,5 +1,5 @@
 =====================================
-MisspelledFileName: wiki_misspell.txt
+HostName: LemonBear.local
 CorrectFileName: wiki_correct.txt
 Method Name: levenshtein
 Threshold: 1
@@ -8,5 +8,5 @@ TotalCorrectWords: 2444
 TotalPredictWords: 4453
 Accuracy(Recall): 0.548843476308
 Precision: 0.548843476308
-TimeUsed: 1:04:01.550260
+TimeUsed: 1:43:58.959861
 =====================================

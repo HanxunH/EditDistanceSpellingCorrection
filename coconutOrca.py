@@ -24,7 +24,8 @@ class coconutOrca:
 
         misspelledFileDictionaryList = self.utilHelper.getFileDictionaryList(misspelledFile)
         correctFileDictionaryList = self.utilHelper.getFileDictionaryList(correctFile)
-
+        self.logger.info("Misspelled Dictionary Length : " + str(len(misspelledFileDictionaryList)))
+        self.logger.info("Correct Dictionary Length : " + str(len(correctFileDictionaryList)))
         if len(misspelledFileDictionaryList) != len(correctFileDictionaryList):
             self.utilHelper.logger.error("MisspelledFile and CorrectFile Word Cound Do Not Match")
             return

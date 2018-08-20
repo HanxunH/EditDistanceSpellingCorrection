@@ -12,3 +12,27 @@ Traceback (most recent call last):
   File "/Users/hanxunhuang/Desktop/UniMelb/COMP90049KT/project1/util.py", line 184, in push
     heapq.heappush(self.heap, entry)
 KeyboardInterrupt
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: levenshtein
+Threshold: 1
+TotalWords: 4453
+TotalCorrectWords: 2444
+TotalPredictWords: 4453
+Accuracy(Recall): 0.548843476308
+Precision: 0.548843476308
+TimeUsed: 1:43:58.959861
+=====================================
+Traceback (most recent call last):
+  File "coconutOrca.py", line 116, in <module>
+    runable.main()
+  File "coconutOrca.py", line 107, in main
+    self.correctFileAndCompare(dictionaryList,misspledFile,correctFile,self.correctHandler.correctMethods.localEditDistence,nGram,perdictThreshold)
+  File "coconutOrca.py", line 51, in correctFileAndCompare
+    orcaPredictList = self.correctHandler.correctWord(dictionary,item,method,n,threshold)
+  File "/Users/hanxunhuang/Desktop/UniMelb/COMP90049KT/project1/orcaCorrect.py", line 24, in correctWord
+    score = (-1) * method(targetWord,item)
+  File "/Users/hanxunhuang/Desktop/UniMelb/COMP90049KT/project1/orcaAutoCorrectMethod.py", line 93, in localEditDistence
+    matrix[indexTarget][indexOriginal] = max(x1,x2,x3,0)
+KeyboardInterrupt
