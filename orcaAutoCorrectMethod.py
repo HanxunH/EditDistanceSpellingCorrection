@@ -1,5 +1,7 @@
 import utilHelper as helper
 import Levenshtein
+import ngram
+from pyxdameraulevenshtein import damerau_levenshtein_distance
 
 class autoCorrectMethods:
     def __init__(self):
@@ -140,3 +142,9 @@ class autoCorrectMethods:
 
     def levenshtein(self,originalWord,targetWord):
         return Levenshtein.distance(originalWord,targetWord)
+
+    def damerauLevenshtein(self, originalWord, targetWord):
+        return damerau_levenshtein_distance(originalWord,targetWord)
+
+    def pynGram(self, originalWord, targetWord, n):
+        return ngram.NGram.compare(originalWord,targetWord,N=n)

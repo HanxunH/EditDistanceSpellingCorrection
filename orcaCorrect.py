@@ -14,7 +14,12 @@ class orcaAutoCorrect:
             return score
         possibleList = util.PriorityQueueWithFunction(pqfunc)
 
-        if method == self.correctMethods.levenshtein:
+        if method == self.correctMethods.pynGram:
+            for item in dictionary:
+                score = (-1) * method(targetWord,item,n)
+                possibleList.push((item,score))
+
+        elif method == self.correctMethods.levenshtein or self.correctMethods.damerauLevenshtein:
             for item in dictionary:
                 score = method(targetWord,item)
                 possibleList.push((item,score))
@@ -24,10 +29,12 @@ class orcaAutoCorrect:
                 score = (-1) * method(targetWord,item)
                 possibleList.push((item,score))
 
-        else:
+        elif method == self.correctMethods.nGram:
             for item in dictionary:
                 score = method(targetWord,item,n)
                 possibleList.push((item,score))
+        else:
+            self.logger.debug("Method Not Found")
 
         bestMatchList = []
         for index in range(0,threshold):

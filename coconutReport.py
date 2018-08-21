@@ -47,8 +47,8 @@ class report:
         self.reportItemlist.append("HostName: " + socket.gethostname())
         self.reportItemlist.append("CorrectFileName: " + self.correctFileName)
         self.reportItemlist.append("Method Name: " + self.methodName)
-        if self.methodName == "nGram":
-            self.reportItemlist.append("n: " + self.ngram)
+        if self.methodName == "nGram" or "pynGram":
+            self.reportItemlist.append("n: " + str(self.ngram))
         self.reportItemlist.append("Threshold: " + str(self.threshold))
         self.reportItemlist.append("TotalWords: " + str(self.totalWordCount))
         self.reportItemlist.append("TotalCorrectWords: " + str(self.totalCorrectWord))

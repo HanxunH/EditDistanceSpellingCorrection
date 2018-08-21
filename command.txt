@@ -2,11 +2,10 @@
 
 
 Sample Data Sets
-
 Threshold -t 1
 
 Levenshtein
-python coconutOrca.py -m 4 -l -f 2018S2-90049P1-data/sample_test_misspell.txt 2018S2-90049P1-data/sample_test_correct.txt -t 1
+python coconutOrca.py -l -f 2018S2-90049P1-data/sample_test_misspell.txt 2018S2-90049P1-data/sample_test_correct.txt -t 1
 
 GlobalEditDistence
 python coconutOrca.py -ged -f 2018S2-90049P1-data/sample_test_misspell.txt 2018S2-90049P1-data/sample_test_correct.txt -t 1
@@ -17,12 +16,18 @@ python coconutOrca.py -led -f 2018S2-90049P1-data/sample_test_misspell.txt 2018S
 nGram n=2
 python coconutOrca.py -ngram -n 2 -f 2018S2-90049P1-data/sample_test_misspell.txt 2018S2-90049P1-data/sample_test_correct.txt -t 1
 
+DamerauLevenshtein
+python coconutOrca.py -d -f 2018S2-90049P1-data/sample_test_misspell.txt 2018S2-90049P1-data/sample_test_correct.txt -t 1
+
+pynGram
+python coconutOrca.py -pyngram -n 2 -f 2018S2-90049P1-data/sample_test_misspell.txt 2018S2-90049P1-data/sample_test_correct.txt -t 1
+
 
 Wiki Data Set
 Threshold -t 1
 
 Levenshtein
-python coconutOrca.py -l -f 2018S2-90049P1-data/wiki_misspell.txt 2018S2-90049P1-data/wiki_correct.txt -t 1
+python coconutOrca.py -l -f 2018S2-90049P1-data/wiki_misspell.txt 2018S2-90049P1-data/wiki_correct.txt -t 6 &
 
 GlobalEditDistence
 python coconutOrca.py -ged -f 2018S2-90049P1-data/wiki_misspell.txt 2018S2-90049P1-data/wiki_correct.txt -t 1
@@ -31,10 +36,48 @@ LocalEditDistence
 python coconutOrca.py -led -f 2018S2-90049P1-data/wiki_misspell.txt 2018S2-90049P1-data/wiki_correct.txt -t 1
 
 nGram n=2
-python coconutOrca.py -ngram -n 2 -f 2018S2-90049P1-data/wiki_misspell.txt 2018S2-90049P1-data/wiki_correct.txt -t 1
+python coconutOrca.py -ngram -n 2 -f 2018S2-90049P1-data/wiki_misspell.txt 2018S2-90049P1-data/wiki_correct.txt -t 1 &
+
+DamerauLevenshtein
+python coconutOrca.py -d -f 2018S2-90049P1-data/wiki_misspell.txt 2018S2-90049P1-data/wiki_correct.txt -t 2 &
+
 
 Birkbeck Data Set
 Threshold -t 1
 
 Levenshtein
-nohup python coconutOrca.py -l -f 2018S2-90049P1-data/birkbeck_misspell.txt 2018S2-90049P1-data/birkbeck.txt -t 1 &
+nohup python coconutOrca.py -l -f 2018S2-90049P1-data/birkbeck_misspell.txt 2018S2-90049P1-data/birkbeck_correct.txt -t 5 &
+
+py-ngram
+python coconutOrca.py -pyngram -n 2 -f 2018S2-90049P1-data/wiki_misspell.txt 2018S2-90049P1-data/wiki_correct.txt -t 3 &
+
+python coconutOrca.py -led -f 2018S2-90049P1-data/wiki_misspell.txt 2018S2-90049P1-data/wiki_correct.txt -t 2 &
+
+8-19
+1.  LocalEditDistence     t1 wiki               Done
+8-20
+2.  Levenshtein           t1 Birkbeck           Done
+3.  Levenshtein           t2 wiki               Done
+4.  DamerauLevenshtein    t1 wiki               Done
+5.  Levenshtein           t3 wiki               Done
+6.  Levenshtein           t4 wiki               Done
+6.  Levenshtein           t5 wiki               Done
+7.  Levenshtein           t2 Birkbeck           Done
+8.  Levenshtein           t3 Birkbeck           Done
+9.  Levenshtein           t4 Birkbeck           Done
+10. Levenshtein           t4 wiki               Done
+11. pyngram               t1 wiki               Done
+12. pyngram               t2 wiki               Done
+8-21
+13. DamerauLevenshtein    t2 wiki               Done
+14. DamerauLevenshtein    t3 wiki               Done
+15. DamerauLevenshtein    t4 wiki               Done
+16. DamerauLevenshtein    t5 wiki
+17. Levenshtein           t5 Birkbeck
+18. Levenshtein           t6 wiki               Done
+19. pyngram               t3 wiki
+20. pyngram               t4 wiki
+20. pyngram               t5 wiki
+21. LocalEditDistence     t2 wiki
+21. LocalEditDistence     t3 wiki
+21. LocalEditDistence     t4 wiki

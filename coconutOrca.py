@@ -33,7 +33,7 @@ class coconutOrca:
         orcaCorrectList = []
         orcaCorrectListWriteToFile = []
 
-        statisticReport = coconutReport.report(method,threshold,n,self.fileOrcaCorrectFilePath + "/" + method.__name__ + "_" + "t=" + str(threshold) + "_" + "report" + "_" + misspelledFileName)
+        statisticReport = coconutReport.report(method,threshold,n,self.fileOrcaCorrectFilePath + "/" + method.__name__ + "_" + "t=" + str(threshold) + "_" + "n=" + str(n) + "_" + "report" + "_" + misspelledFileName)
         statisticReport.addCorrectFileName(correctFileFileName)
         statisticReport.addMisspelledFileName(misspelledFileName)
 
@@ -97,18 +97,27 @@ class coconutOrca:
             self.coreCount = int(sys.argv[index+1])
 
         # Test Cases
+        method = self.correctHandler.correctMethods.levenshtein
         if "-l" in sys.argv:
             # Levenshtein Method
-            self.correctFileAndCompare(dictionaryList,misspledFile,correctFile,self.correctHandler.correctMethods.levenshtein,nGram,perdictThreshold)
+            method = self.correctHandler.correctMethods.levenshtein
         elif "-ged" in sys.argv:
             # GlobalEditDistence Method
-            self.correctFileAndCompare(dictionaryList,misspledFile,correctFile,self.correctHandler.correctMethods.globalEditDistence,nGram,perdictThreshold)
+            method = self.correctHandler.correctMethods.globalEditDistence
         elif "-led" in sys.argv:
             # LocalEditDistence Method
-            self.correctFileAndCompare(dictionaryList,misspledFile,correctFile,self.correctHandler.correctMethods.localEditDistence,nGram,perdictThreshold)
+            method = self.correctHandler.correctMethods.localEditDistence
         elif "-ngram" in sys.argv:
             # nGram Distence method
-            self.correctFileAndCompare(dictionaryList,misspledFile,correctFile,self.correctHandler.correctMethods.nGram,nGram,perdictThreshold)
+            method = self.correctHandler.correctMethods.nGram
+        elif "-d" in sys.argv:
+            # Damerau Levenshtein
+            method = self.correctHandler.correctMethods.damerauLevenshtein
+        elif "-pyngram" in sys.argv:
+            # nGram Distence method
+            method = self.correctHandler.correctMethods.pynGram
+
+        self.correctFileAndCompare(dictionaryList,misspledFile,correctFile,method,nGram,perdictThreshold)
 
         return
 

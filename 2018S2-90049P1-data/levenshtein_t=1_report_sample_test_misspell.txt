@@ -1,0 +1,12 @@
+=====================================
+HostName: LemonBear.local
+CorrectFileName: sample_test_correct.txt
+Method Name: levenshtein
+Threshold: 1
+TotalWords: 30
+TotalCorrectWords: 24
+TotalPredictWords: 30
+Accuracy(Recall): 0.8
+Precision: 0.8
+TimeUsed: 0:00:43.308057
+=====================================

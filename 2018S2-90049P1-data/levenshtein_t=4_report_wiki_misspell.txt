@@ -1,0 +1,12 @@
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: levenshtein
+Threshold: 4
+TotalWords: 4453
+TotalCorrectWords: 3584
+TotalPredictWords: 17812
+Accuracy(Recall): 0.804850662475
+Precision: 0.201212665619
+TimeUsed: 1:23:49.227898
+=====================================

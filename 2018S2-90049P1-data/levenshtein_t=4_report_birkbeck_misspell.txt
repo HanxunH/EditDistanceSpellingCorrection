@@ -1,0 +1,12 @@
+=====================================
+HostName: LemonBear.local
+CorrectFileName: birkbeck_correct.txt
+Method Name: levenshtein
+Threshold: 4
+TotalWords: 34683
+TotalCorrectWords: 12995
+TotalPredictWords: 138732
+Accuracy(Recall): 0.374679237667
+Precision: 0.0936698094167
+TimeUsed: 12:36:38.223969
+=====================================

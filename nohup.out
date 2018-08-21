@@ -36,3 +36,444 @@ Traceback (most recent call last):
   File "/Users/hanxunhuang/Desktop/UniMelb/COMP90049KT/project1/orcaAutoCorrectMethod.py", line 93, in localEditDistence
     matrix[indexTarget][indexOriginal] = max(x1,x2,x3,0)
 KeyboardInterrupt
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: levenshtein
+Threshold: 2
+TotalWords: 4453
+TotalCorrectWords: 3133
+TotalPredictWords: 8906
+Accuracy(Recall): 0.703570626544
+Precision: 0.351785313272
+TimeUsed: 1:15:24.764868
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: birkbeck_correct.txt
+Method Name: levenshtein
+Threshold: 1
+TotalWords: 34683
+TotalCorrectWords: 7547
+TotalPredictWords: 34683
+Accuracy(Recall): 0.217599400283
+Precision: 0.217599400283
+TimeUsed: 8:30:57.812249
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: levenshtein
+Threshold: 3
+TotalWords: 4453
+TotalCorrectWords: 3426
+TotalPredictWords: 13359
+Accuracy(Recall): 0.769368964743
+Precision: 0.256456321581
+TimeUsed: 1:24:12.601946
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: levenshtein
+Threshold: 4
+TotalWords: 4453
+TotalCorrectWords: 3584
+TotalPredictWords: 17812
+Accuracy(Recall): 0.804850662475
+Precision: 0.201212665619
+TimeUsed: 1:23:49.227898
+=====================================
+2018-08-20 18:36:43,391 - INFO - [coconutOrca.py:27 - correctFileAndCompare() ] - Misspelled Dictionary Length : 34683
+2018-08-20 18:36:43,392 - INFO - [coconutOrca.py:28 - correctFileAndCompare() ] - Correct Dictionary Length : 34683
+2018-08-20 18:36:43,392 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:43,392 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: a
+2018-08-20 18:36:44,205 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['a', 'aa']
+2018-08-20 18:36:44,205 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:44,205 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: a
+2018-08-20 18:36:45,243 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['a', 'aa']
+2018-08-20 18:36:45,244 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:45,244 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: a
+2018-08-20 18:36:46,126 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['a', 'aa']
+2018-08-20 18:36:46,127 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:46,127 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: a
+2018-08-20 18:36:46,963 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['a', 'aa']
+2018-08-20 18:36:46,963 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:46,963 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: a
+2018-08-20 18:36:47,790 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['a', 'aa']
+2018-08-20 18:36:47,790 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:47,790 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: a
+2018-08-20 18:36:48,686 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['a', 'aa']
+2018-08-20 18:36:48,688 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:48,688 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: a
+2018-08-20 18:36:49,483 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['a', 'aa']
+2018-08-20 18:36:49,483 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:49,483 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: a
+2018-08-20 18:36:50,263 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['a', 'aa']
+2018-08-20 18:36:50,264 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:50,264 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: a
+2018-08-20 18:36:51,045 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['a', 'aa']
+2018-08-20 18:36:51,046 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:51,046 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: a
+2018-08-20 18:36:51,860 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['a', 'aa']
+2018-08-20 18:36:51,860 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:51,860 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: a
+2018-08-20 18:36:52,700 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['a', 'aa']
+2018-08-20 18:36:52,700 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:52,700 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: a
+2018-08-20 18:36:53,562 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['a', 'aa']
+2018-08-20 18:36:53,562 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:53,563 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: aacock
+2018-08-20 18:36:54,487 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['acock', 'ablock']
+2018-08-20 18:36:54,487 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:54,488 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: aalysing
+2018-08-20 18:36:55,383 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['analysing', 'allying']
+2018-08-20 18:36:55,383 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:55,383 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: aand
+2018-08-20 18:36:56,256 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['aani', 'aband']
+2018-08-20 18:36:56,256 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:56,256 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: aante
+2018-08-20 18:36:57,119 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['amante', 'ante']
+2018-08-20 18:36:57,119 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:57,119 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: aas
+2018-08-20 18:36:58,003 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['aas', 'aa']
+2018-08-20 18:36:58,004 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:58,004 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: aas
+2018-08-20 18:36:58,900 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['aas', 'aa']
+2018-08-20 18:36:58,900 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:58,900 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: aas
+2018-08-20 18:36:59,771 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['aas', 'aa']
+2018-08-20 18:36:59,771 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:36:59,771 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: ab
+2018-08-20 18:37:00,653 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['ab', 'a']
+2018-08-20 18:37:00,658 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:00,658 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abaeth
+2018-08-20 18:37:01,582 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abaft', 'abayah']
+2018-08-20 18:37:01,582 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:01,582 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abahe
+2018-08-20 18:37:02,618 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abase', 'abate']
+2018-08-20 18:37:02,618 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:02,618 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abaimable
+2018-08-20 18:37:03,602 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abatable', 'abdicable']
+2018-08-20 18:37:03,603 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:03,603 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: aball
+2018-08-20 18:37:04,466 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['ball', 'caball']
+2018-08-20 18:37:04,466 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:04,466 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abarater
+2018-08-20 18:37:05,428 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abacate', 'abater']
+2018-08-20 18:37:05,428 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:05,428 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abaydall
+2018-08-20 18:37:06,382 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['baygall', 'abada']
+2018-08-20 18:37:06,383 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:06,383 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abays
+2018-08-20 18:37:07,325 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abay', 'abas']
+2018-08-20 18:37:07,325 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:07,325 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abbatoir
+2018-08-20 18:37:08,265 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abator', 'abattoir']
+2018-08-20 18:37:08,265 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:08,265 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abbility
+2018-08-20 18:37:09,203 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['ability', 'aedility']
+2018-08-20 18:37:09,203 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:09,203 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abe
+2018-08-20 18:37:10,088 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abe', 'ab']
+2018-08-20 18:37:10,088 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:10,089 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abel
+2018-08-20 18:37:10,975 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abel', 'abe']
+2018-08-20 18:37:10,975 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:10,975 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abesat
+2018-08-20 18:37:11,889 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abbest', 'abdat']
+2018-08-20 18:37:11,889 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:11,889 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abeserbed
+2018-08-20 18:37:12,821 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['absorbed', 'abseiled']
+2018-08-20 18:37:12,821 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:12,822 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abhorence
+2018-08-20 18:37:13,739 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abhorrence', 'abhorrences']
+2018-08-20 18:37:13,739 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:13,739 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abilaty
+2018-08-20 18:37:14,642 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['ability', 'abilao']
+2018-08-20 18:37:14,644 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:14,644 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abillity
+2018-08-20 18:37:15,726 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['ability', 'agility']
+2018-08-20 18:37:15,726 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:15,727 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abilty
+2018-08-20 18:37:16,719 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['ability', 'abilao']
+2018-08-20 18:37:16,720 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:16,720 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abjection
+2018-08-20 18:37:17,663 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abjection', 'abjections']
+2018-08-20 18:37:17,663 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:17,663 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: ablity
+2018-08-20 18:37:18,586 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['ability', 'ality']
+2018-08-20 18:37:18,587 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:18,587 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abmeteb
+2018-08-20 18:37:19,576 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['ammeter', 'abantes']
+2018-08-20 18:37:19,576 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:19,576 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abmitt
+2018-08-20 18:37:20,522 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abbott', 'abit']
+2018-08-20 18:37:20,522 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:20,522 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abo
+2018-08-20 18:37:21,415 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abo', 'ab']
+2018-08-20 18:37:21,415 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:21,415 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: aboat
+2018-08-20 18:37:22,305 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abdat', 'abort']
+2018-08-20 18:37:22,305 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:22,305 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: aboat
+2018-08-20 18:37:23,221 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abdat', 'abort']
+2018-08-20 18:37:23,221 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:23,222 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: aboe
+2018-08-20 18:37:24,119 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abbe', 'abe']
+2018-08-20 18:37:24,119 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:24,119 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: aboer
+2018-08-20 18:37:25,072 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abler', 'abner']
+2018-08-20 18:37:25,072 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:25,072 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abofe
+2018-08-20 18:37:25,964 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abode', 'abote']
+2018-08-20 18:37:25,964 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:25,964 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: aboit
+2018-08-20 18:37:26,848 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abit', 'aboil']
+2018-08-20 18:37:26,848 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:26,848 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abology
+2018-08-20 18:37:27,707 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abiology', 'acology']
+2018-08-20 18:37:27,708 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:27,708 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abont
+2018-08-20 18:37:28,559 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abort', 'about']
+2018-08-20 18:37:28,559 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:28,559 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: aboo
+2018-08-20 18:37:29,405 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abo', 'aboon']
+2018-08-20 18:37:29,405 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:29,405 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abord
+2018-08-20 18:37:30,283 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abord', 'aboard']
+2018-08-20 18:37:30,283 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:30,283 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: aborratus
+2018-08-20 18:37:31,422 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abortus', 'aberrants']
+2018-08-20 18:37:31,427 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:31,427 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abost
+2018-08-20 18:37:32,319 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abort', 'abos']
+2018-08-20 18:37:32,319 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:32,320 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abot
+2018-08-20 18:37:33,279 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abbot', 'abet']
+2018-08-20 18:37:33,279 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:33,279 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abote
+2018-08-20 18:37:34,200 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abote', 'abate']
+2018-08-20 18:37:34,200 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:34,200 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abou
+2018-08-20 18:37:35,041 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abo', 'abos']
+2018-08-20 18:37:35,041 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:35,041 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abou
+2018-08-20 18:37:35,892 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abo', 'abos']
+2018-08-20 18:37:35,892 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:35,892 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abought
+2018-08-20 18:37:36,817 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abought', 'bought']
+2018-08-20 18:37:36,817 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:36,817 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abould
+2018-08-20 18:37:37,753 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abound', 'aboard']
+2018-08-20 18:37:37,753 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:37,753 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: aboule
+2018-08-20 18:37:38,735 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['boule', 'abaue']
+2018-08-20 18:37:38,735 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:38,735 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abound
+2018-08-20 18:37:39,639 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abound', 'abounds']
+2018-08-20 18:37:39,639 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:39,639 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abouse
+2018-08-20 18:37:40,523 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abuse', 'arouse']
+2018-08-20 18:37:40,523 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:40,524 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: about
+2018-08-20 18:37:41,476 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['about', 'abort']
+2018-08-20 18:37:41,476 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:41,476 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abouth
+2018-08-20 18:37:42,470 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['about', 'abouts']
+2018-08-20 18:37:42,470 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:42,471 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abouve
+2018-08-20 18:37:43,455 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['above', 'abaue']
+2018-08-20 18:37:43,455 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:43,455 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: aboved
+2018-08-20 18:37:44,351 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['aboded', 'above']
+2018-08-20 18:37:44,352 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:44,352 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abowe
+2018-08-20 18:37:45,367 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abode', 'abote']
+2018-08-20 18:37:45,367 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:45,367 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abowt
+2018-08-20 18:37:46,266 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abort', 'about']
+2018-08-20 18:37:46,266 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:46,266 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: aboyed
+2018-08-20 18:37:47,191 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['aboded', 'abased']
+2018-08-20 18:37:47,191 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:47,191 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abpricate
+2018-08-20 18:37:48,094 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['apricate', 'abdicate']
+2018-08-20 18:37:48,094 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:48,094 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abpropate
+2018-08-20 18:37:49,020 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abrogate', 'approbate']
+2018-08-20 18:37:49,020 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:49,020 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abraod
+2018-08-20 18:37:49,900 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abraid', 'abrood']
+2018-08-20 18:37:49,900 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:49,900 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abraters
+2018-08-20 18:37:50,815 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abaters', 'abraders']
+2018-08-20 18:37:50,816 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:50,816 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abreashed
+2018-08-20 18:37:51,716 - INFO - [coconutOrca.py:53 - correctFileAndCompare() ] - Prediction: ['abashed', 'abrased']
+2018-08-20 18:37:51,716 - INFO - [coconutOrca.py:50 - correctFileAndCompare() ] - ====================================
+2018-08-20 18:37:51,716 - INFO - [coconutOrca.py:51 - correctFileAndCompare() ] - Comparing: abresheyat
+Traceback (most recent call last):
+  File "coconutOrca.py", line 126, in <module>
+    runable.main()
+  File "coconutOrca.py", line 120, in main
+    self.correctFileAndCompare(dictionaryList,misspledFile,correctFile,method,nGram,perdictThreshold)
+  File "coconutOrca.py", line 52, in correctFileAndCompare
+    orcaPredictList = self.correctHandler.correctWord(dictionary,item,method,n,threshold)
+  File "/Users/hanxunhuang/Desktop/UniMelb/COMP90049KT/project1/orcaCorrect.py", line 24, in correctWord
+    score = method(targetWord,item)
+TypeError: nGram() takes exactly 4 arguments (3 given)
+Traceback (most recent call last):
+  File "coconutOrca.py", line 126, in <module>
+    runable.main()
+  File "coconutOrca.py", line 120, in main
+    self.correctFileAndCompare(dictionaryList,misspledFile,correctFile,method,nGram,perdictThreshold)
+  File "coconutOrca.py", line 52, in correctFileAndCompare
+    orcaPredictList = self.correctHandler.correctWord(dictionary,item,method,n,threshold)
+  File "/Users/hanxunhuang/Desktop/UniMelb/COMP90049KT/project1/orcaCorrect.py", line 24, in correctWord
+    score = method(targetWord,item)
+TypeError: nGram() takes exactly 4 arguments (3 given)
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: levenshtein
+Threshold: 5
+TotalWords: 4453
+TotalCorrectWords: 3680
+TotalPredictWords: 22265
+Accuracy(Recall): 0.826409162362
+Precision: 0.165281832472
+TimeUsed: 1:55:49.644403
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: damerauLevenshtein
+Threshold: 1
+TotalWords: 4453
+TotalCorrectWords: 2670
+TotalPredictWords: 4453
+Accuracy(Recall): 0.599595778127
+Precision: 0.599595778127
+TimeUsed: 9:55:19.220038
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: birkbeck_correct.txt
+Method Name: levenshtein
+Threshold: 2
+TotalWords: 34683
+TotalCorrectWords: 10390
+TotalPredictWords: 69366
+Accuracy(Recall): 0.299570394718
+Precision: 0.149785197359
+TimeUsed: 12:36:42.312117
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: birkbeck_correct.txt
+Method Name: levenshtein
+Threshold: 4
+TotalWords: 34683
+TotalCorrectWords: 12995
+TotalPredictWords: 138732
+Accuracy(Recall): 0.374679237667
+Precision: 0.0936698094167
+TimeUsed: 12:36:38.223969
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: birkbeck_correct.txt
+Method Name: levenshtein
+Threshold: 3
+TotalWords: 34683
+TotalCorrectWords: 11920
+TotalPredictWords: 104049
+Accuracy(Recall): 0.343684225701
+Precision: 0.114561408567
+TimeUsed: 12:37:09.283584
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: localEditDistence
+Threshold: 1
+TotalWords: 4453
+TotalCorrectWords: 1392
+TotalPredictWords: 4453
+Accuracy(Recall): 0.312598248372
+Precision: 0.312598248372
+TimeUsed: 2 days, 3:08:52.412395
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: levenshtein
+Threshold: 6
+TotalWords: 4453
+TotalCorrectWords: 3755
+TotalPredictWords: 26718
+Accuracy(Recall): 0.8432517404
+Precision: 0.140541956733
+TimeUsed: 2:17:19.470410
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: pynGram
+Threshold: 1
+TotalWords: 4453
+TotalCorrectWords: 2787
+TotalPredictWords: 4453
+Accuracy(Recall): 0.625870199865
+Precision: 0.625870199865
+TimeUsed: 22:34:03.973533
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: pynGram
+Threshold: 2
+TotalWords: 4453
+TotalCorrectWords: 3351
+TotalPredictWords: 8906
+Accuracy(Recall): 0.752526386706
+Precision: 0.376263193353
+TimeUsed: 22:39:51.985986
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: damerauLevenshtein
+Threshold: 2
+TotalWords: 4453
+TotalCorrectWords: 3396
+TotalPredictWords: 8906
+Accuracy(Recall): 0.762631933528
+Precision: 0.381315966764
+TimeUsed: 13:14:50.810653
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: damerauLevenshtein
+Threshold: 4
+TotalWords: 4453
+TotalCorrectWords: 3865
+TotalPredictWords: 17812
+Accuracy(Recall): 0.867954188188
+Precision: 0.216988547047
+TimeUsed: 13:15:06.650629
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: damerauLevenshtein
+Threshold: 3
+TotalWords: 4453
+TotalCorrectWords: 3713
+TotalPredictWords: 13359
+Accuracy(Recall): 0.833819896699
+Precision: 0.277939965566
+TimeUsed: 13:15:36.491942
+=====================================

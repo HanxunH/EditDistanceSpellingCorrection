@@ -1,0 +1,12 @@
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: localEditDistence
+Threshold: 1
+TotalWords: 4453
+TotalCorrectWords: 1392
+TotalPredictWords: 4453
+Accuracy(Recall): 0.312598248372
+Precision: 0.312598248372
+TimeUsed: 2 days, 3:08:52.412395
+=====================================

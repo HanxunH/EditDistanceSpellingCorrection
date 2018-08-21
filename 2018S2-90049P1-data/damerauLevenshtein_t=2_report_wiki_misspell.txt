@@ -1,0 +1,12 @@
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: damerauLevenshtein
+Threshold: 2
+TotalWords: 4453
+TotalCorrectWords: 3396
+TotalPredictWords: 8906
+Accuracy(Recall): 0.762631933528
+Precision: 0.381315966764
+TimeUsed: 13:14:50.810653
+=====================================
