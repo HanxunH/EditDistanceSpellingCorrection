@@ -49,9 +49,10 @@ Levenshtein
 nohup python coconutOrca.py -l -f 2018S2-90049P1-data/birkbeck_misspell.txt 2018S2-90049P1-data/birkbeck_correct.txt -t 5 &
 
 py-ngram
-python coconutOrca.py -pyngram -n 2 -f 2018S2-90049P1-data/wiki_misspell.txt 2018S2-90049P1-data/wiki_correct.txt -t 3 &
+python coconutOrca.py -pyngram -n 4 -f 2018S2-90049P1-data/wiki_misspell.txt 2018S2-90049P1-data/wiki_correct.txt -t 5 &
 
-python coconutOrca.py -led -f 2018S2-90049P1-data/wiki_misspell.txt 2018S2-90049P1-data/wiki_correct.txt -t 2 &
+python coconutOrca.py -led -f 2018S2-90049P1-data/wiki_misspell.txt 2018S2-90049P1-data/wiki_misspell.txt -t 5 &
+
 
 8-19
 1.  LocalEditDistence     t1 wiki               Done
@@ -72,12 +73,12 @@ python coconutOrca.py -led -f 2018S2-90049P1-data/wiki_misspell.txt 2018S2-90049
 13. DamerauLevenshtein    t2 wiki               Done
 14. DamerauLevenshtein    t3 wiki               Done
 15. DamerauLevenshtein    t4 wiki               Done
-16. DamerauLevenshtein    t5 wiki
-17. Levenshtein           t5 Birkbeck
+16. DamerauLevenshtein    t5 wiki               Done
+17. Levenshtein           t5 Birkbeck           Done
 18. Levenshtein           t6 wiki               Done
-19. pyngram               t3 wiki
-20. pyngram               t4 wiki
-20. pyngram               t5 wiki
-21. LocalEditDistence     t2 wiki
-21. LocalEditDistence     t3 wiki
-21. LocalEditDistence     t4 wiki
+19. pyngram               t3 wiki               Done
+20. pyngram               t4 wiki               Done
+21. pyngram               t5 wiki               Done
+22. LocalEditDistence     t5 wiki
+23. pyngram n3            t5 wiki
+23. pyngram n4            t5 wiki

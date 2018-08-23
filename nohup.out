@@ -477,3 +477,66 @@ Accuracy(Recall): 0.833819896699
 Precision: 0.277939965566
 TimeUsed: 13:15:36.491942
 =====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: damerauLevenshtein
+Threshold: 5
+TotalWords: 4453
+TotalCorrectWords: 3957
+TotalPredictWords: 22265
+Accuracy(Recall): 0.888614417247
+Precision: 0.177722883449
+TimeUsed: 15:09:59.338243
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: birkbeck_correct.txt
+Method Name: levenshtein
+Threshold: 5
+TotalWords: 34683
+TotalCorrectWords: 13856
+TotalPredictWords: 173415
+Accuracy(Recall): 0.399504079809
+Precision: 0.0799008159617
+TimeUsed: 15:50:57.616172
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: pynGram
+n: 2
+Threshold: 5
+TotalWords: 4453
+TotalCorrectWords: 3756
+TotalPredictWords: 22265
+Accuracy(Recall): 0.843476308107
+Precision: 0.168695261621
+TimeUsed: 22:04:16.723311
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: pynGram
+n: 2
+Threshold: 4
+TotalWords: 4453
+TotalCorrectWords: 3690
+TotalPredictWords: 17812
+Accuracy(Recall): 0.828654839434
+Precision: 0.207163709859
+TimeUsed: 22:04:33.797081
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: pynGram
+n: 2
+Threshold: 3
+TotalWords: 4453
+TotalCorrectWords: 3579
+TotalPredictWords: 13359
+Accuracy(Recall): 0.803727823939
+Precision: 0.267909274646
+TimeUsed: 22:05:52.346940
+=====================================

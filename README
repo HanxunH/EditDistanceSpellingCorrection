@@ -35,9 +35,16 @@ Data Set
   Wikipedia files; only the textual source is different.
 
 
-External Source
+External Packages
 1. python-Levenshtein 0.12.0
 pip install python-levenshtein
 
-2. util.py
+2. pyxDamerauLevenshtein 1.5
+pip install pyxDamerauLevenshtein
+
+3. ngram 3.3.2
+pip install ngram
+
+4. util.py
 UC Berkeley Pacman Project
+Included in this project.
