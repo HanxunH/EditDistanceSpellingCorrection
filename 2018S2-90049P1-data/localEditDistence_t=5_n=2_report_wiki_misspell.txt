@@ -1,0 +1,13 @@
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_misspell.txt
+Method Name: localEditDistence
+n: 2
+Threshold: 5
+TotalWords: 4453
+TotalCorrectWords: 0
+TotalPredictWords: 22265
+Accuracy(Recall): 0.0
+Precision: 0.0
+TimeUsed: 1 day, 21:46:10.887397
+=====================================

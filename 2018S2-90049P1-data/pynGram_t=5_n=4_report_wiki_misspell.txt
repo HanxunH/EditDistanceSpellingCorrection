@@ -1,0 +1,13 @@
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: pynGram
+n: 4
+Threshold: 5
+TotalWords: 4453
+TotalCorrectWords: 3712
+TotalPredictWords: 22265
+Accuracy(Recall): 0.833595328992
+Precision: 0.166719065798
+TimeUsed: 14:27:20.616332
+=====================================

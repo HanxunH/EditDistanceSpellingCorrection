@@ -540,3 +540,42 @@ Accuracy(Recall): 0.803727823939
 Precision: 0.267909274646
 TimeUsed: 22:05:52.346940
 =====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: pynGram
+n: 3
+Threshold: 5
+TotalWords: 4453
+TotalCorrectWords: 3742
+TotalPredictWords: 22265
+Accuracy(Recall): 0.840332360207
+Precision: 0.168066472041
+TimeUsed: 13:49:29.234764
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_correct.txt
+Method Name: pynGram
+n: 4
+Threshold: 5
+TotalWords: 4453
+TotalCorrectWords: 3712
+TotalPredictWords: 22265
+Accuracy(Recall): 0.833595328992
+Precision: 0.166719065798
+TimeUsed: 14:27:20.616332
+=====================================
+=====================================
+HostName: LemonBear.local
+CorrectFileName: wiki_misspell.txt
+Method Name: localEditDistence
+n: 2
+Threshold: 5
+TotalWords: 4453
+TotalCorrectWords: 0
+TotalPredictWords: 22265
+Accuracy(Recall): 0.0
+Precision: 0.0
+TimeUsed: 1 day, 21:46:10.887397
+=====================================
