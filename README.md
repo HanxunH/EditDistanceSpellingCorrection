@@ -10,7 +10,7 @@ pip install python-levenshtein
 pip install pyxDamerauLevenshtein
 * [ngram 3.3.2](https://github.com/gpoulter/python-ngram)
 pip install ngram
-4. [UC Berkeley Pacman Project](http://ai.berkeley.edu/search.html) util.py
+* [UC Berkeley Pacman Project](http://ai.berkeley.edu/search.html) util.py
 Included in this project.
 
 ### How to Use?
