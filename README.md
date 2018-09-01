@@ -4,13 +4,13 @@ This is project 1 of [Knowledge Technologies (COMP90049) Semester 2, 2018](https
 ### Environment
 Python Verison: 2.7.10
 External Packages
-* [python-Levenshtein 0.12.0](https://github.com/ztane/python-Levenshtein)
+* [python-Levenshtein 0.12.0](https://github.com/ztane/python-Levenshtein) . 
 pip install python-levenshtein
-* [pyxDamerauLevenshtein 1.5](https://github.com/gfairchild/pyxDamerauLevenshtein)
+* [pyxDamerauLevenshtein 1.5](https://github.com/gfairchild/pyxDamerauLevenshtein) . 
 pip install pyxDamerauLevenshtein
-* [ngram 3.3.2](https://github.com/gpoulter/python-ngram)
+* [ngram 3.3.2](https://github.com/gpoulter/python-ngram) . 
 pip install ngram
-* [UC Berkeley Pacman Project](http://ai.berkeley.edu/search.html) util.py
+* [UC Berkeley Pacman Project](http://ai.berkeley.edu/search.html) util.py . 
 Included in this project.
 
 ### How to Use?
