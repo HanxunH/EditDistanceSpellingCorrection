@@ -1,4 +1,4 @@
-A simple spelling correction system base on edit distance.
+A simple spelling correction system base on edit distance.   
 This is project 1 of [Knowledge Technologies (COMP90049) Semester 2, 2018](https://handbook.unimelb.edu.au/subjects/comp90049), University of Melbourne.
 
 ### Environment
