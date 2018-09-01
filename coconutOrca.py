@@ -70,6 +70,7 @@ class coconutOrca:
         isMultipleProcessing = False
         coreCount = 0
         # Command Handling
+
         if "-t" in sys.argv:
             index = sys.argv.index("-t")
             perdictThreshold = int(sys.argv[index+1])
@@ -83,13 +84,15 @@ class coconutOrca:
                 print "Try a misspelled word "
                 userInputWord = sys.stdin.readline()
                 self.logger.info("Analyzing")
-                list = correctHandler.correctWord(dictionaryList,userInputWord,self.correctHandler.correctMethods.levenshtein,2,1)
+                list = self.correctHandler.correctWord(dictionaryList,userInputWord,self.correctHandler.correctMethods.levenshtein,2,1)
                 print "Did you mean: " + list[0] + " ?"
                 print ""
         elif "-f" in sys.argv:
             index = sys.argv.index("-f")
             misspledFile = sys.argv[index+1]
             correctFile = sys.argv[index+2]
+        else:
+            print("Check README for help")
 
         if "-m" in sys.argv:
             index = sys.argv.index("-m")
@@ -117,7 +120,8 @@ class coconutOrca:
             # nGram Distence method
             method = self.correctHandler.correctMethods.pynGram
 
-        self.correctFileAndCompare(dictionaryList,misspledFile,correctFile,method,nGram,perdictThreshold)
+        if "-f" in sys.argv:
+            self.correctFileAndCompare(dictionaryList,misspledFile,correctFile,method,nGram,perdictThreshold)
 
         return
 

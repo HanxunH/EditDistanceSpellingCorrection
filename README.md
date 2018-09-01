@@ -1,6 +1,44 @@
-Python Verison: 2.7.10
+A simple spelling correction system base on edit distance.
+This is project 1 of [Knowledge Technologies (COMP90049) Semester 2, 2018](https://handbook.unimelb.edu.au/subjects/comp90049), University of Melbourne.
 
-Data Set
+### Environment
+Python Verison: 2.7.10
+External Packages
+* [python-Levenshtein 0.12.0](https://github.com/ztane/python-Levenshtein)
+pip install python-levenshtein
+* [pyxDamerauLevenshtein 1.5](https://github.com/gfairchild/pyxDamerauLevenshtein)
+pip install pyxDamerauLevenshtein
+* [ngram 3.3.2](https://github.com/gpoulter/python-ngram)
+pip install ngram
+4. [UC Berkeley Pacman Project](http://ai.berkeley.edu/search.html) util.py
+Included in this project.
+
+### How to Use?
+python coconutOrca.py
+
+* Arguments
+- Interactive Mode
+-i
+- Compare files Mode
+-f follow by path of misspelled file and correct file
+- Threshold
+  -t follow by threshold integer
+* Edit Distance
+- -l Levenshtein
+- -d Damerau-Levenshtein
+- -ged Global Edit Distance
+- -led Local Edit Distance
+- -ngram N-Gram Distance
+- -pynGram N-Gram Distance(ngram 3.3.2)
+- -n follow by a number (For N-Gram Distance)
+
+* Example
+For sample_test_misspell.txt and sample_test_correct.txt using Levenshtein and Threshold equal to 1.
+```sh
+$ python coconutOrca.py -l -f 2018S2-90049P1-data/sample_test_misspell.txt 2018S2-90049P1-data/sample_test_correct.txt -t 1
+```
+
+### Data Set
 - dict.txt: This is a list of approximately 370K English entries, which should
   comprise the dictionary for your approximate string search method(s). This
   dictionary is a slightly-altered version of the data from:
@@ -33,18 +71,3 @@ Data Set
 - birkbeck_correct.txt: These are the corresponding corrections from
   birkbeck_misspell.txt - the format of these files is the same as the
   Wikipedia files; only the textual source is different.
-
-
-External Packages
-1. python-Levenshtein 0.12.0
-pip install python-levenshtein
-
-2. pyxDamerauLevenshtein 1.5
-pip install pyxDamerauLevenshtein
-
-3. ngram 3.3.2
-pip install ngram
-
-4. util.py
-UC Berkeley Pacman Project
-Included in this project.
